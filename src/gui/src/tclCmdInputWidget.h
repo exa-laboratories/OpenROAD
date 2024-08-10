@@ -34,6 +34,10 @@
 
 #include <tcl.h>
 
+#ifndef TCL_SIZE_MAX
+typedef int Tcl_Size;
+#endif
+
 #include <QCompleter>
 #include <QMenu>
 #include <QPlainTextEdit>
